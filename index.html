@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WillBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Exemplares</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Misterio</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Contos</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Bolsa de Valores</a>
+        </li>
+      </ul>
+      <img class="logotipo" src="img/pngtree-letter-w-logo-png-png-image_6119566.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Will</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Aventura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Marketing</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Misterio</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Bolsa de Valores</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Salvos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Livros Emprestados</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Qual livro pressisa?</h2>
+    <p class="banner__texto">Encontre em o que quiser!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novidades</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/1271-b6ef265a5399943c7616717159558102-320-0.webp"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/111-18c1f82f500a4893fb16721611770557-320-0 (1).webp"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/1271-b6ef265a5399943c7616717159558102-320-0 (1).webp" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/capa-exclamacoes-20221-2489be14c3a997a34a16721496120420-320-0.webp" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/castelo-interior-ou-moradas-capa1-be72ebd0b164e144b916887596033066-320-0 (1).webp" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/guido-21-ce979d66793bac627c16944612919515-320-0.webp" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez esteja procurando...</h3>
+          <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+          <p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+        </div>
+        <img class="livropq" src="img/castelo-interior-ou-moradas-capa1-be72ebd0b164e144b916887596033066-320-0.webp" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/111-18c1f82f500a4893fb16721611770557-320-0 (1).webp"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/1271-b6ef265a5399943c7616717159558102-320-0 (1).webp" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/capa-exclamacoes-20221-2489be14c3a997a34a16721496120420-320-0.webp" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/111-18c1f82f500a4893fb16721611770557-320-0 (1).webp" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/castelo-interior-ou-moradas-capa1-be72ebd0b164e144b916887596033066-320-0.webp" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/guido-21-ce979d66793bac627c16944612919515-320-0.webp" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Escritora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Santa Tereza</h2>
+          <p class="descrição__texto">Analista de escrita, Juliana é especialista em livros exemplares.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img class="mulher" src="img/ed9331fe80e14c86a1701f63d0238e27.jpeg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">MAIS VISTOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Romance</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Aventura</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ação</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Misterio</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Marketing</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Escrita</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Enem</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Bolsa de Valores</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro </h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Will</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
